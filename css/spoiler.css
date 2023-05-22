@@ -1,0 +1,62 @@
+.Hide {
+    margin: 5px 0;
+    padding: 0 15px;
+    border: 1px solid #E5E5E5;
+    position: relative;
+    clear: both;
+    border-radius: 3px;
+}
+
+.Hide .Hide-title {
+    background: #E5E5E5;
+    margin: 0 -15px;
+    padding: 5px 15px;
+    color: #B22222;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    cursor: pointer;
+}
+
+.Hide .Hide-title:before {
+    font-weight: bold;
+}
+
+.Hide.collapsed .Hide-title:before {
+    content: "";
+}
+
+.Hide.expanded .Hide-title:before {
+    content: "";
+}
+
+.Hide .Hide-content {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    -moz-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+.Hide.collapsed .Hide-content {
+    overflow: hidden;
+    max-height: 0;
+}
+
+.Hide.expanded .Hide-content {
+    max-height: 3000px;
+    overflow: hidden;
+}
+
+.Hide .Hide-content p:first-child {
+    margin-top: 0 !important;
+}
+mportant;
+}
